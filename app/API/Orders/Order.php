@@ -9,7 +9,7 @@ class Order
     public function get($id)
     {
         if (Auth::isAllowAccess()) {
-            $order = [];
+            $order = []; 
             return response()->json($order, 201);
         }
     }
