@@ -343,3 +343,21 @@ img {
 .aside__item_active {
     color: #303F9F !important;
 }
+
+.tabs {
+    margin-bottom: 30px;
+}
+
+.tabs__item {
+    font-weight: 700;
+    margin-right: 30px;
+}
+.orders {
+
+}
+
+.order {
+    border: 2px solid #D7D7D7;
+    padding: 40px 30px;
+
+}
