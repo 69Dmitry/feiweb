@@ -329,3 +329,17 @@ img {
 .pagination__item-link {
     font-weight: 900;
 }
+
+.aside {
+    font-weight: 700;
+    padding-top: 70px;
+}
+
+.aside__item {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.aside__item_active {
+    color: #303F9F !important;
+}
