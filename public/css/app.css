@@ -371,3 +371,15 @@ img {
     display: block;
 
 }
+
+
+.personal__label {
+    font-weight: 900;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.personal__value {
+    display: block;
+    font-weight: 600;
+}
