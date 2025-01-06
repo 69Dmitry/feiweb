@@ -29,9 +29,14 @@
         </div>
 
         <div class="orders">
-            <div class="order">
+            <a href="#" class="order">
                 <div class="order__top d-flex justify-content-between">
-                    <div class="order__date">№13546 от 01.11.2024</div>
+                    <div class="order__date">
+                        <div class="order__icon">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="5" cy="5" r="5" fill="#303F9F"/>
+</svg></div>
+№13546 от 01.11.2024</div>
                     <div class="order__status">Активная</div>
                 </div>
                 <div class="order__info d-flex justify-content-between">
@@ -50,7 +55,7 @@
                         </div>
                     
                 </div>
-            </div>
+</a>
         </div>
     </div>
   </div>

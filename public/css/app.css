@@ -356,8 +356,18 @@ img {
 
 }
 
+.order__date {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.order__icon {
+    margin-right: 7px;
+    display: inline;
+}
 .order {
     border: 2px solid #D7D7D7;
-    padding: 40px 30px;
+    padding: 40px 40px;
+    display: block;
 
 }
