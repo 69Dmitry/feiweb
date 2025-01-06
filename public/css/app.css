@@ -376,10 +376,15 @@ img {
 .personal__label {
     font-weight: 900;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .personal__value {
     display: block;
     font-weight: 600;
+}
+
+
+.personal__card {
+    padding: 20px 0;
 }
