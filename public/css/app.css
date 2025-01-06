@@ -394,3 +394,11 @@ img {
     display: inline-block;
     border-bottom: 1px dashed #303F9F;
 }
+.form__label {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.personal__block {
+    padding: 10px 0;
+}

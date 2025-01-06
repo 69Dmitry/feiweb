@@ -24,11 +24,11 @@
         <div class="col-9">
             <h1 class="contacts__title">Редактирование данных</h1>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 personal__block">
                     <label class="form__label" for="name">ФИО</label>
                     <input type="text" id="name" name="name" class="form__input">
                 </div>
-                <div class="col-6">
+                <div class="col-6 personal__block">
                     <label class="form__label" for="name">Пол</label>
                     <div class="form__group">
 
@@ -39,13 +39,31 @@
                         <label class="form__label" for="name">Мужской </label>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 personal__block">
                     <label class="form__label" for="name">Телефон</label>
-                    <input type="text" id="name" name="name" placeholder="+7(XXX)-XX-XX"  class="form__input">
+                    <input type="text" id="name" name="name" placeholder="+7(XXX)-XX-XX" class="form__input">
                 </div>
-                <div class="col-6">
+                <div class="col-6 personal__block">
                     <label class="form__label" for="name">Почта</label>
-                    <input type="text" id="name" name="name" placeholder="example@mail.ru"  class="form__input">
+                    <input type="text" id="name" name="name" placeholder="example@mail.ru" class="form__input">
+                </div>
+                <div class="col-6 personal__block">
+                    <label class="form__label" for="name">Тип клиента</label>
+                    <div class="form__group">
+
+                        <input type="radio" id="name" name="name" value="Женский" class="">
+                        <label class="form__label" for="name">Юридическое лицо </label>
+
+                        <input type="radio" id="name" name="name" value="" class="">
+                        <label class="form__label" for="name">Физическое лицо </label>
+                    </div>
+                </div>
+                <div class="col-6 personal__block">
+                    <label class="form__label">Подтвержающий документ</label><br>
+                    <button class="button">Загрузить файл</button>
+                    <span style="color: #CACACA; display:block">
+                    Подтверждающим документом могут быть водительские права, паспорт
+                    </span>
                 </div>
             </div>
         </div>
