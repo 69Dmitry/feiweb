@@ -32,6 +32,7 @@ Route::group(['prefix' => 'news'], function(){
 
 Route::group(['prefix' => 'personal'], function(){
     Route::get('/', \App\Http\Controllers\Personal\IndexController::class)->name('personal.index');
+    Route::get('/info', \App\Http\Controllers\Personal\ViewController::class)->name('personal.view');
 });
 
 
