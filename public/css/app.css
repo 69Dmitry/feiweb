@@ -388,3 +388,9 @@ img {
 .personal__card {
     padding: 20px 0;
 }
+
+.personal__value_curly {
+    color: #303F9F !important;
+    display: inline-block;
+    border-bottom: 1px dashed #303F9F;
+}
