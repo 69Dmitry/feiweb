@@ -40,8 +40,8 @@
                     </div>
                 </div>
                 <div class="col-6 personal__block">
-                    <label class="form__label" for="name">Телефон</label>
-                    <input type="text" id="name" name="name" placeholder="+7(XXX)-XX-XX" class="form__input">
+                    <label class="form__label" for="phone">Телефон</label>
+                    <input type="text" id="phone" name="phone" placeholder="+7(XXX)-XX-XX" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="name">Почта</label>
