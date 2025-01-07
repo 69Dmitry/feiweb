@@ -63,6 +63,10 @@
                     Подтверждающим документом могут быть водительские права, паспорт
                     </span>
                 </div>
+                <div class="col-6 personal__block">
+                    <button class="button">Сохранить</button>
+                    <button class="button button__revert">Сбросить</button>
+                </div>
             </div>
         </div>
     </div>
