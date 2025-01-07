@@ -44,8 +44,8 @@
                     <input type="text" id="phone" name="phone" placeholder="+7(XXX)-XX-XX" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
-                    <label class="form__label" for="name">Почта</label>
-                    <input type="text" id="name" name="name" placeholder="example@mail.ru" class="form__input">
+                    <label class="form__label" for="mail">Почта</label>
+                    <input type="text" id="mail" name="mail" placeholder="example@mail.ru" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="name">Тип клиента</label>
