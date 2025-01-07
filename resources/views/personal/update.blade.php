@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-6 personal__block">
                     <label class="form__label" for="name">ФИО</label>
-                    <input type="text" id="name" name="name" class="form__input">
+                    <input type="text" id="name" name="name" value="{{$user->name ?? ''}}" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="gender">Пол</label>
@@ -45,15 +45,13 @@
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="mail">Почта</label>
-                    <input type="text" id="mail" name="mail" placeholder="example@mail.ru" class="form__input">
+                    <input type="text" id="mail" name="mail" value="{{$user->email ?? ''}}" placeholder="example@mail.ru" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="type">Тип клиента</label>
                     <div class="form__group">
-
-                        <input type="radio" checked id="jur" name="jur" value="Юридическое лицо" class="">
+                        <input type="radio" id="jur" name="jur" value="Юридическое лицо" class="">
                         <label class="form__label form__label_thin" for="jur">Юридическое лицо </label>
-
                         <input type="radio" id="fiz" name="fiz" value="Физическое лицо" class="">
                         <label class="form__label form__label_thin" for="fiz">Физическое лицо </label>
                     </div>

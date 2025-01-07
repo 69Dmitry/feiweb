@@ -20,7 +20,9 @@ class UpdateController extends Controller
             $id = Auth::id();
         }
       
-        $user = User::find($id)->get();
+        $user = User::find($id)->firstorFail();
+
+       
         return view('personal.update', compact('menu', 'user'));
     }
 }
