@@ -29,14 +29,14 @@
                     <input type="text" id="name" name="name" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
-                    <label class="form__label" for="name">Пол</label>
+                    <label class="form__label" for="gender">Пол</label>
                     <div class="form__group">
 
-                        <input type="radio" id="name" name="name" value="Женский" class="">
-                        <label class="form__label form__label_thin" for="name">Женский </label>
+                        <input type="radio" id="gender_f" name="gender_f" value="Женский" class="">
+                        <label class="form__label form__label_thin" for="gender_f">Женский </label>
 
-                        <input type="radio" id="name" name="name" value="" class="">
-                        <label class="form__label form__label_thin" for="name">Мужской </label>
+                        <input type="radio" id="gender_m" name="gender_f" value="" class="">
+                        <label class="form__label form__label_thin" for="gender_m">Мужской </label>
                     </div>
                 </div>
                 <div class="col-6 personal__block">
