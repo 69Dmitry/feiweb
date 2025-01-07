@@ -51,7 +51,7 @@
                     <label class="form__label" for="type">Тип клиента</label>
                     <div class="form__group">
 
-                        <input type="radio" id="jur" name="jur" value="Юридическое лицо" class="">
+                        <input type="radio" checked id="jur" name="jur" value="Юридическое лицо" class="">
                         <label class="form__label form__label_thin" for="jur">Юридическое лицо </label>
 
                         <input type="radio" id="fiz" name="fiz" value="Физическое лицо" class="">
