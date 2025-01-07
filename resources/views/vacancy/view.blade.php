@@ -2,8 +2,8 @@
 <div class="container">
 <div class="row">
   <ul class="breadcrumbs">
-    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="">Главная</a></li>
-    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="{{route('vacancy.list')}}">Вакансии</a></li>
+    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="">Главная / </a></li>
+    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="{{route('vacancy.list')}}">Вакансии / </a></li>
     <li class="breadcrumbs__item breadcrumbs__item-active">{{$vacancy->title}}</li>
   </ul>
   <div class="col-lg-12">
