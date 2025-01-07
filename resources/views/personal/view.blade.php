@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-4 personal__card">
                     <span class="personal__label">ФИО </span>
-                    <span class="personal__value"> Петров Сергей Иванович </span>
+                    <span class="personal__value"> {{$user->name}} </span>
                 </div>
                 <div class="col-lg-4 personal__card">
                     <span class="personal__label">Телефон </span>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-lg-4 personal__card">
                 <span class="personal__label"> Почта</span>
-                <span class="personal__value"> petrovSI@gmail.com </span>
+                <span class="personal__value"> {{$user->email}} </span>
                 </div>
                 <div class="col-lg-4 personal__card">
                 <span class="personal__label"> Тип клиента</span>
