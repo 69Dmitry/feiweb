@@ -48,14 +48,14 @@
                     <input type="text" id="mail" name="mail" placeholder="example@mail.ru" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
-                    <label class="form__label" for="name">Тип клиента</label>
+                    <label class="form__label" for="type">Тип клиента</label>
                     <div class="form__group">
 
-                        <input type="radio" id="name" name="name" value="Женский" class="">
-                        <label class="form__label form__label_thin" for="name">Юридическое лицо </label>
+                        <input type="radio" id="jur" name="jur" value="Юридическое лицо" class="">
+                        <label class="form__label form__label_thin" for="jur">Юридическое лицо </label>
 
-                        <input type="radio" id="name" name="name" value="" class="">
-                        <label class="form__label form__label_thin" for="name">Физическое лицо </label>
+                        <input type="radio" id="fiz" name="fiz" value="Физическое лицо" class="">
+                        <label class="form__label form__label_thin" for="fiz">Физическое лицо </label>
                     </div>
                 </div>
                 <div class="col-6 personal__block">
