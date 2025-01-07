@@ -33,10 +33,10 @@
                     <div class="form__group">
 
                         <input type="radio" id="name" name="name" value="Женский" class="">
-                        <label class="form__label" for="name">Женский </label>
+                        <label class="form__label form__label_thin" for="name">Женский </label>
 
                         <input type="radio" id="name" name="name" value="" class="">
-                        <label class="form__label" for="name">Мужской </label>
+                        <label class="form__label form__label_thin" for="name">Мужской </label>
                     </div>
                 </div>
                 <div class="col-6 personal__block">
@@ -52,10 +52,10 @@
                     <div class="form__group">
 
                         <input type="radio" id="name" name="name" value="Женский" class="">
-                        <label class="form__label" for="name">Юридическое лицо </label>
+                        <label class="form__label form__label_thin" for="name">Юридическое лицо </label>
 
                         <input type="radio" id="name" name="name" value="" class="">
-                        <label class="form__label" for="name">Физическое лицо </label>
+                        <label class="form__label form__label_thin" for="name">Физическое лицо </label>
                     </div>
                 </div>
                 <div class="col-6 personal__block">

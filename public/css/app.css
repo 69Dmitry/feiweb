@@ -402,3 +402,11 @@ img {
 .personal__block {
     padding: 10px 0;
 }
+
+.form__label_thin {
+    font-weight: 400 !important;
+}
+
+.form__group {
+    margin-top: 10px;
+}
