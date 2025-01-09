@@ -10,7 +10,7 @@ class Order
     {
         if (Auth::isAllowAccess()) {
             $order = [];
-            return response()->json($order, 201);
+            return response()->json($order, 200);
         }
     }
 }

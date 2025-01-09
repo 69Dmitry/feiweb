@@ -10,15 +10,23 @@ class Manager
     {
         if (Auth::isAllowAccess()) {
             $manager = []; 
-            return response()->json($manager, 201);
+            return response()->json($manager, 200);
         }
     }
 
     public function add($info)
     {
         if (Auth::isAllowAccess()) {
-            $info = []; 
-            return response()->json($info, 201);
+            $response = []; 
+            return response()->json($response, 200);
+        }
+    }
+
+    public function delete($id)
+    {
+        if (Auth::isAllowAccess()) {
+            $response = []; 
+            return response()->json($response, 200);
         }
     }
 }
