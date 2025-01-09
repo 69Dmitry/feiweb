@@ -1,15 +1,15 @@
 <?php
 
-namespace App\API\Orders;
+namespace App\HTTP\Rest\Orders;
 
-use App\API\Auth;
+use App\HTTP\Rest\Auth;
 
 class Order
 {
     public function get($id)
     {
         if (Auth::isAllowAccess()) {
-            $order = []; 
+            $order = [];
             return response()->json($order, 201);
         }
     }
