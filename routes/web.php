@@ -96,11 +96,6 @@ Route::group(['prefix' => 'admin/menu'], function(){
 });
 
 
-
-Route::group(['prefix' => 'test'], function(){
-    Route::get('/edit', \App\Http\Controllers\Test\IndexController::class)->name('test.index');
-});
-
 //Route::group(['prefix' => 'api'], function(){
     Route::get('/managers', [App\Http\Controllers\ManagerController::class, 'index']);
 //});
