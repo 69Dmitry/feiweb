@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\HTTP\Rest\Auth;
+use App\Tools\Rest\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Manager as ModelsManager;
 use Illuminate\Http\Request;
@@ -22,17 +22,24 @@ class ManagerController extends Controller
     //     if (Auth::isAllowAccess()) {
     //         $response = []; 
 
-            
+
     //         return response()->json($response, 200);
     //     }
     // }
 
     public function index(Request $request)
     {
+        if (!Auth::isAllowAccess()) {
+            return response()->json([
+                'success' => false,
+                'time' => date('Y-m-d H:i:s'),
+                'errors' => ['Access denied'],
+            ], 403);
+        }
         $result = [
             'success' => true,
             'time' => date('Y-m-d H:i:s'),
-            'result' => ModelsManager::all()
+            'result' => ModelsManager::all(),
         ];
         return response()->json($result, 200);
     }
