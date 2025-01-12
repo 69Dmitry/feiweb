@@ -1,0 +1,47 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\HTTP\Rest\Auth;
+use App\Http\Controllers\Controller;
+use App\Models\Manager as ModelsManager;
+use Illuminate\Http\Request;
+
+class ManagerController extends Controller
+{
+    // public function get($id)
+    // {
+    //     if (Auth::isAllowAccess()) {
+    //         $manager = []; 
+    //         return response()->json($manager, 200);
+    //     }
+    // }
+
+    // public function add($info)
+    // {
+    //     if (Auth::isAllowAccess()) {
+    //         $response = []; 
+
+            
+    //         return response()->json($response, 200);
+    //     }
+    // }
+
+    public function index(Request $request)
+    {
+        $result = [
+            'success' => true,
+            'time' => date('Y-m-d H:i:s'),
+            'result' => ModelsManager::all()
+        ];
+        return response()->json($result, 200);
+    }
+
+    // public function delete($id)
+    // {
+    //     if (Auth::isAllowAccess()) {
+    //         $response = []; 
+    //         return response()->json($response, 200);
+    //     }
+    // }
+}
