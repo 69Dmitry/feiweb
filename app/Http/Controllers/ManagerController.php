@@ -17,15 +17,25 @@ class ManagerController extends Controller
     //     }
     // }
 
-    // public function add($info)
-    // {
-    //     if (Auth::isAllowAccess()) {
-    //         $response = []; 
+    public function add(Request $request)
+    {
+        $errors = [];
+        if (Auth::isAllowAccess()) {
+            $response = []; 
+            if (ModelsManager::isExist($info['email'])) {
+
+            }
 
 
-    //         return response()->json($response, 200);
-    //     }
-    // }
+            return response()->json($response, 200);
+        }
+
+        return response()->json([
+            'success' => false,
+            'time' => date('Y-m-d H:i:s'),
+            'errors' => $errors,
+        ], 500);
+    }
 
     public function index(Request $request)
     {
