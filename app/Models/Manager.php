@@ -11,9 +11,9 @@ class Manager extends Model
 
     protected $table = 'managers';
 
-    protected $fillable = ['name', 'surname', 'second_name', 'gender', 'is_online', 'user_id'];
+    protected $fillable = ['name', 'surname', 'second_name', 'gender', 'is_online', 'user_id', 'email'];
 
     public static function isExists($email) {
-        return false;
+        return self::where('email', $email)->exists();
     }
 }
