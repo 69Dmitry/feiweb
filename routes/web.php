@@ -96,6 +96,6 @@ Route::group(['prefix' => 'admin/menu'], function(){
 });
 
 
-//Route::group(['prefix' => 'api'], function(){
+Route::group(['prefix' => 'api/v1/'], function(){
     Route::get('/managers', [App\Http\Controllers\ManagerController::class, 'index']);
-//});
+});
