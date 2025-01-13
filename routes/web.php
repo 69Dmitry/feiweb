@@ -99,4 +99,6 @@ Route::group(['prefix' => 'admin/menu'], function(){
 Route::group(['prefix' => 'api/v1/'], function(){
     Route::get('/managers', [App\Http\Controllers\ManagerController::class, 'index']);
     Route::post('/managers/add/', [App\Http\Controllers\ManagerController::class, 'add']);
+    Route::post('/managers/delete/', [App\Http\Controllers\ManagerController::class, 'delete']);
+    Route::get('/managers/get/', [App\Http\Controllers\ManagerController::class, 'get']);
 });
