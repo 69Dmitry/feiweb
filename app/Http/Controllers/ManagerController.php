@@ -24,7 +24,6 @@ class ManagerController extends Controller
         if (Auth::isAllowAccess()) {
             $result = [];
             if (!ModelsManager::isExist($info['email'])) {
-
                 try {
                     $manager = new ModelsManager();
                     $manager->create($info);
@@ -37,6 +36,7 @@ class ManagerController extends Controller
                     $errors[] = $e->getMessage();
                 }
             }
+            $errors[] = 'Менеджер с таким email уже существует';
         }
 
         return response()->json([
