@@ -9,13 +9,14 @@ use Illuminate\Http\Request;
 
 class ManagerController extends Controller
 {
-    // public function get($id)
-    // {
-    //     if (Auth::isAllowAccess()) {
-    //         $manager = []; 
-    //         return response()->json($manager, 200);
-    //     }
-    // }
+    public function get($id)
+    {
+        $result = [];
+        if (Auth::isAllowAccess()) {
+            $manager = ModelsManager::find($id);
+            return response()->json($manager, 200);
+        }
+    }
 
     public function add(Request $request)
     {
@@ -38,7 +39,7 @@ class ManagerController extends Controller
             }
             $errors[] = 'Менеджер с таким email уже существует';
         }
-
+        
         return response()->json([
             'success' => false,
             'time' => date('Y-m-d H:i:s'),
@@ -63,11 +64,21 @@ class ManagerController extends Controller
         return response()->json($result, 200);
     }
 
-    // public function delete($id)
-    // {
-    //     if (Auth::isAllowAccess()) {
-    //         $response = []; 
-    //         return response()->json($response, 200);
-    //     }
-    // }
+    public function delete($id)
+    {
+        $result = [];
+        if (Auth::isAllowAccess()) {
+            ModelsManager::find($id)->delete();
+            $result['success'] = true;
+            $result['time'] = date('Y-m-d H:i:s');
+            $result['result'] = 'Менеджер успешно удален';
+            return response()->json($result, 200);
+        }
+
+        return response()->json([
+            'success' => false,
+            'time' => date('Y-m-d H:i:s'),
+            'errors' => ['Access denied'],
+        ], 403);
+    }
 }
