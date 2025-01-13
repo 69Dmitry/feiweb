@@ -20,19 +20,23 @@ class ManagerController extends Controller
     public function add(Request $request)
     {
         $errors = [];
-        $info = [
-            'email' => 'test@test.ru',
-            ''
-        ];
+        $info = $request->all();
         if (Auth::isAllowAccess()) {
-            $result = []; 
+            $result = [];
             if (!ModelsManager::isExist($info['email'])) {
 
-                return response()->json($result, 200);
+                try {
+                    $manager = new ModelsManager();
+                    $manager->create($info);
+
+                    $result['success'] = true;
+                    $result['time'] = date('Y-m-d H:i:s');
+                    $result['result'] = 'created';
+                    return response()->json($result, 200);
+                } catch (\Exception $e) {
+                    $errors[] = $e->getMessage();
+                }
             }
-
-
-            
         }
 
         return response()->json([
