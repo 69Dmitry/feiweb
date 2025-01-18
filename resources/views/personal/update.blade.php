@@ -52,7 +52,7 @@
                     <div class="form__group">
                         <input type="radio" id="jur" name="jur" value="Юридическое лицо" class="">
                         <label class="form__label form__label_thin" for="jur">Юридическое лицо </label>
-                        <input type="radio" id="fiz" name="fiz" value="Физическое лицо" class="">
+                        <input type="radio" id="fiz" selected name="fiz" value="Физическое лицо" class="">
                         <label class="form__label form__label_thin" for="fiz">Физическое лицо </label>
                     </div>
                 </div>

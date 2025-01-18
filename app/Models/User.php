@@ -64,6 +64,9 @@ class User extends Authenticatable
      */
     public function getStatusTitleAttribute() 
     {
-        return self::getStatuses()[$this->active];
+        if (!$this->status) {
+            return 'Не подтвержден';
+        } 
+        return self::getStatuses()[$this->status];
     }
 }

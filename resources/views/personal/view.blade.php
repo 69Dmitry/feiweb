@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-lg-4 personal__card">
                 <span class="personal__label"> Статус</span>
-                <span class="personal__value"> Подтвержден </span>
+                <span class="personal__value"> {{ $user->statusTitle }} </span>
                 </div>
                 <div class="col-lg-4 personal__card">
                 <span class="personal__label"> Почта</span>
