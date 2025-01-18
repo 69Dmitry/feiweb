@@ -40,17 +40,16 @@
             <div class="d-flex justify-content-between align-items-center" style="margin-top: 20px;">
             <nav>
                 <ul class="menu">
-                  
-                    <li class="menu__item"><a href=""></a></li>
-                    <li class="menu__item"><a href=""></a></li>
-                    <li class="menu__item"><a href=""></a></li>
-                    <li class="menu__item"><a href=""></a></li>
-                    <li class="menu__item"><a href=""></a></li>
-                 
-                </ul>
+                                        <li class="menu__item"><a href="/services">Услуги</a></li>
+                                        <li class="menu__item"><a href="/articles">Статьи</a></li>
+                                        <li class="menu__item"><a href="/contacts">Контакты</a></li>
+                                        <li class="menu__item"><a href="/vacancies">Вакансии</a></li>
+                                        <li class="menu__item"><a href="/news">Новости</a></li>
+                                        <li class="menu__item"><a href="/about">О компании</a></li>
+                                    </ul>
             </nav>
-            <form method="get" action="{{route('search.index')}}">
-                <input name="q" class="form__input" value="{{$query ?? ''}}" type="text" placeholder="Поиск">
+            <form method="get" action="http://localhost/search">
+                <input name="q" class="form__input" value="" type="text" placeholder="Поиск">
             </form>
 </div>
            

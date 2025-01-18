@@ -10,13 +10,13 @@
     <div class="row">
         <div class="col-3">
             <div class="aside">
-                <a href="#" class="aside__item aside__item_active">
+                <a href="{{route('personal.view')}}" class="aside__item aside__item_active">
                     ЛИЧНАЯ ИНФОРМАЦИЯ
                 </a>
-                <a href="#" class="aside__item ">
+                <a href="{{route('personal.index')}}" class="aside__item ">
                     ЗАЯВКИ
                 </a>
-                <a href="#" class="aside__item">
+                <a href="{{route('personal.update')}}" class="aside__item">
                     РЕДАКТИРОВАНИЕ ДАННЫХ
                 </a>
             </div>
