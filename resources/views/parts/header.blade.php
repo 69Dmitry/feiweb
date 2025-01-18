@@ -24,6 +24,7 @@
             </a>
 
             <div class="d-flex align-items-center">
+            <a class="phone" href="{{route('personal.index')}}">ЛИЧНЫЙ КАБИНЕТ</a>
                 <a class="phone" href="">+7 496 172 84 89</a>
                 <a class="button" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Заказать звонок</a>
             </div>
@@ -32,8 +33,8 @@
             <div class="d-flex justify-content-between align-items-center" style="margin-top: 20px;">
             <nav>
                 <ul class="menu">
-                    @foreach ($menu as $k => $menu)
-                    <li class="menu__item"><a href="/{{$k}}">{{$menu}}</a></li>
+                    @foreach ($menu as $k => $m)
+                    <li class="menu__item"><a href="/{{$k}}">{{$m}}</a></li>
                     @endforeach
                 </ul>
             </nav>
