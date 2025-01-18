@@ -14,6 +14,8 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable, HasRoles;
 
+    private const CONFIRMED = 1, NOT_CONFIRMED = 0;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -46,5 +48,22 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+
+    public static function getStatuses()
+    {
+         return [
+            self::CONFIRMED => 'Подтвержден', 
+            self::NOT_CONFIRMED => 'Не подтвержден'
+         ];
+    }
+
+    /**
+     * отдает название атрибута
+     */
+    public function getStatusTitleAttribute() 
+    {
+        return self::getStatuses()[$this->active];
     }
 }
