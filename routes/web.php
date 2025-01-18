@@ -6,6 +6,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/contacts', [App\Http\Controllers\Contacts\ContactsController::class, 'index']);
 Route::get('/about', [App\Http\Controllers\About\AboutController::class, 'index']);
 
+Route::get('/logout', [App\Http\Controllers\Auth\LogoutController::class, 'logout']);
+
 Route::group(['prefix' => 'articles'], function(){
     Route::get('/', \App\Http\Controllers\Article\ListController::class)->name('article.list');
     Route::get('/{slug}', \App\Http\Controllers\Article\ViewController::class)->name('article.view');

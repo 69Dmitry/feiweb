@@ -24,7 +24,14 @@
             </a>
 
             <div class="d-flex align-items-center">
-            <a class="phone" href="{{route('personal.index')}}">ЛИЧНЫЙ КАБИНЕТ</a>
+            <a class="phone" href="{{route('personal.index')}}">ЛИЧНЫЙ КАБИНЕТ 
+                @if (Auth::check())
+                <span>({{ Auth::user()->name }})</span>
+                @endif
+            </a>
+            @if (Auth::check())
+            <a class="" href="/logout">Выйти</a>
+            @endif
                 <a class="phone" href="">+7 496 172 84 89</a>
                 <a class="button" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Заказать звонок</a>
             </div>
