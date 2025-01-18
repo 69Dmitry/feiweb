@@ -14,12 +14,12 @@ class ViewController extends Controller
     public function __invoke(Request $request)
     {
         $menu = MenuHelper::getMenuJsonFile();
-        $id = 1;
-        if (Auth::check() && Auth::id()) {
+       // $id = 1;
+        if (Auth::check()) {
             $id = Auth::id();
         }
       
-        $user = User::find($id)->firstorFail();
+        $user = User::query()->where('id', $id)->first();
 
         return view('personal.view', compact('menu', 'user'));
     }
