@@ -25,5 +25,11 @@ class RolesAndPermissionsSeeder extends Seeder
 
         $roleCM = Role::create(['name' => 'content manager']);
         $roleCM->givePermissionTo($permissionContentManager);
+
+
+        $permissionUser = Permission::create(['name' => 'manage personal']);
+
+        $roleU = Role::create(['name' => 'user']);
+        $roleU->givePermissionTo($permissionUser);
     }
 }

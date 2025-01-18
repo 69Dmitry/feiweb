@@ -44,6 +44,7 @@ img {
     border: 1px solid #303F9F;
     color: white !important;
     font-weight: 600;
+    text-align: center;
 }
 
 .button__revert {
@@ -410,3 +411,17 @@ img {
 .form__group {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__block {
+        margin-top: 150px;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+    .phone {
+        display: none;
+    }
+}
+
