@@ -12,19 +12,19 @@
     <section class="section">
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <span class="adv__label">30+</span>
                     <p>Лет успешной практики </p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <span class="adv__label">>950</span>
                     <p>Довольных клиентов</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <span class="adv__label">2 тыс.</span>
                     <p>Выигранных дел</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <span class="adv__label">22 года</span>
                     <p>Контроля качества услуг</p>
                 </div>

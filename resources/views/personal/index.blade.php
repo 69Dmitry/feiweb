@@ -29,6 +29,7 @@
             </div>
 
             <div class="orders">
+                @foreach ($orders as $order)
                 <a href="#" class="order">
                     <div class="order__top d-flex justify-content-between">
                         <div class="order__date">
@@ -37,27 +38,40 @@
                                     <circle cx="5" cy="5" r="5" fill="#303F9F" />
                                 </svg>
                             </div>
-                            №13546 от 01.11.2024
+                            №{{$order->number}} от {{$order->created_at}}
                         </div>
                         <div class="order__status">Активная</div>
                     </div>
                     <div class="order__info d-flex justify-content-between">
+
+                    @php 
+                    $decodedOrder = json_decode($order->data, true);
+                  
+                    @endphp
+                    @if ($decodedOrder['employer'])
                         <div class="order__item">
+                          
                             <b>Сотрудник</b><br>
-                            <span>Головина Д.А.</span>
+                            <span>{{implode(',', $decodedOrder['employer'])}}</span>
+                           
                         </div>
+                        @endif
+                        @if ($decodedOrder['result'])
                         <div class="order__item">
                             <b>Результат</b><br>
-                            <span>Обработка</span>
+                            <span>{{$decodedOrder['result']}}</span>
                         </div>
+                        @endif
+                        @if ($decodedOrder['services'])
                         <div class="order__item">
                             <b>Услуги</b><br>
-                            <span>Маркетинговая аналитика<br>
-                                Налоговый аудит</span>
+                            <span>{{implode(',', $decodedOrder['services'])}}</span>
                         </div>
+                        @endif
 
                     </div>
                 </a>
+                @endforeach
             </div>
         </div>
     </div>

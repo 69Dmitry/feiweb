@@ -35,13 +35,13 @@
                         <input type="radio" id="gender_f" name="gender_f" value="Женский" class="">
                         <label class="form__label form__label_thin" for="gender_f">Женский </label>
 
-                        <input type="radio" id="gender_m" name="gender_f" value="" class="">
+                        <input type="radio" id="gender_m" checked name="gender_f" value="" class="">
                         <label class="form__label form__label_thin" for="gender_m">Мужской </label>
                     </div>
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="phone">Телефон</label>
-                    <input type="text" id="phone" name="phone" placeholder="+7(XXX)-XX-XX" class="form__input">
+                    <input type="text" id="phone" name="phone" value="{{$user->phone ?? ''}}" placeholder="+7(XXX)-XX-XX" class="form__input">
                 </div>
                 <div class="col-6 personal__block">
                     <label class="form__label" for="mail">Почта</label>
@@ -52,7 +52,7 @@
                     <div class="form__group">
                         <input type="radio" id="jur" name="jur" value="Юридическое лицо" class="">
                         <label class="form__label form__label_thin" for="jur">Юридическое лицо </label>
-                        <input type="radio" id="fiz" selected name="fiz" value="Физическое лицо" class="">
+                        <input type="radio" id="fiz" checked name="fiz" value="Физическое лицо" class="">
                         <label class="form__label form__label_thin" for="fiz">Физическое лицо </label>
                     </div>
                 </div>
