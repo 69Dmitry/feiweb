@@ -40,7 +40,7 @@ Route::group(['prefix' => 'personal', 'middleware' => ['auth', 'permission:manag
 
 
 
-Route::group(['middleware' => ['auth', 'permission:manage apanel']], function () {
+Route::group(['middleware' => ['role:admin|content manager']], function () {
     Route::get('/admin', \App\Http\Controllers\Admin\AdminController::class)->name('admin.index');
 });
 
