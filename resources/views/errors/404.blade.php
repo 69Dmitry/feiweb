@@ -24,11 +24,19 @@
             </a>
 
             <div class="d-flex align-items-center">
+            @if (Auth::check())
             <a class="phone" href="{{route('personal.index')}}">ЛИЧНЫЙ КАБИНЕТ 
-                @if (Auth::check())
+          
                 <span>({{ Auth::user()->name }})</span>
-                @endif
+               
             </a>
+            @else
+            <a class="phone" href="/login">АВТОРИЗАЦИЯ
+          
+            
+               
+            </a>
+            @endif
             @if (Auth::check())
             <a class=""  style="margin-right: 20px;"  href="/logout">Выйти</a>
             @endif
