@@ -10,7 +10,7 @@
             </div><!-- /.col -->
 
             <div class="col-sm-6 text-right">
-              <a class="btn btn-primary"  href="{{ route('article.edit', $article->id ) }}">Редактировать</a>
+              <a class="btn btn-primary"  href="{{ route('service.edit', $service->id ) }}">Редактировать</a>
             </div>
           <!-- /.col -->
           </div><!-- /.row -->

@@ -18,6 +18,6 @@ class UpdateController extends Controller
 
         $service->update($data);
 
-        return redirect()->back()->with('success', 'Статья ' . $data['title'] . ' была успешно обновлена');
+        return redirect()->back()->with('success', 'Услуга ' . $data['title'] . ' была успешно обновлена');
      }
 }

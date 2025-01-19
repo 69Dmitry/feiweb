@@ -16,9 +16,6 @@ class StoreController extends Controller
     {
         $data = $request->validated();
 
-        if (array_key_exists('img', $data)) {
-            $data['img'] = Storage::disk('public')->put('/images', $data['img']);
-        }
 
         if (empty($data['slug'])) {
             $data['slug'] = Transliterate::slugify(trim($data['title']));
