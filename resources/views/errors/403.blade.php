@@ -30,7 +30,7 @@
                 @endif
             </a>
             @if (Auth::check())
-            <a class="" href="/logout">Выйти</a>
+            <a class="" style="margin-right: 20px;" href="/logout">Выйти</a>
             @endif
                 <a class="phone" href="">+7 496 172 84 89</a>
                 <a class="button" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Заказать звонок</a>
