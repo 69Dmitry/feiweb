@@ -29,7 +29,7 @@
             </div>
 
             <div class="orders">
-                @if ($orders)
+                @if ($orders->count() > 0)
                 @foreach ($orders as $order)
                 <a href="#" class="order">
                     <div class="order__top d-flex justify-content-between">
