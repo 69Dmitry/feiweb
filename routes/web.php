@@ -32,7 +32,7 @@ Route::group(['prefix' => 'news'], function(){
     Route::get('/{slug}', \App\Http\Controllers\News\ViewController::class)->name('news.view');
 });
 
-Route::group(['prefix' => 'personal', 'middleware' => ['role', 'role:admin|content manager|simple user']], function(){
+Route::group(['prefix' => 'personal', 'middleware' => ['role:admin|content manager|simple user']], function(){
     Route::get('/orders', \App\Http\Controllers\Personal\IndexController::class)->name('personal.index');
     Route::get('/info', \App\Http\Controllers\Personal\ViewController::class)->name('personal.view');
     Route::get('/update', \App\Http\Controllers\Personal\UpdateController::class)->name('personal.update');
