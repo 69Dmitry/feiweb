@@ -16,11 +16,6 @@ class StoreController extends Controller
     {
         $data = $request->validated();
 
-
-        if (empty($data['slug'])) {
-            $data['slug'] = Transliterate::slugify(trim($data['title']));
-        }
-
         $data['active'] = 0;
         if (array_key_exists('active', $data)) {
             $data['active'] = 1;
