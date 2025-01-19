@@ -28,8 +28,8 @@ class RolesAndPermissionsSeeder extends Seeder
 
 
         $permissionUser = Permission::create(['name' => 'manage personal']);
-
-        $roleU = Role::create(['name' => 'user']);
-        $roleU->givePermissionTo($permissionUser);
+        $roleUser = Role::create(['name' => 'simple user']);
+        $roleUser->givePermissionTo($permissionUser);
+       
     }
 }
