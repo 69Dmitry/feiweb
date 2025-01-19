@@ -16,7 +16,7 @@
         @endif
 
         <div class="article__top">
-          <a style="color:#303F9F !important; margin-top: 20px" class="link__curly" href="{{route('article.list')}}" >Назад к списку</a>
+          <a style="color:#303F9F !important; margin-top: 20px" class="link__curly" href="{{route('news.list')}}" >Назад к списку</a>
         </div>
         <div class="article__text">
         {{strip_tags($news->description)}}
