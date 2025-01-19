@@ -66,6 +66,9 @@
           Авторизованы как: {{ Auth::user()->email }}
           @endif
         </a>
+        <a class="nav-link" data-toggle="dropdown" href="http://sem7seya.beget.tech">
+          На сайт
+        </a>
       </li>
     </ul>
   </nav>
