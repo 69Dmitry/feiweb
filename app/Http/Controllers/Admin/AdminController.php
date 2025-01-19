@@ -15,9 +15,13 @@ class AdminController extends Controller
        // $tagsCounter = Tag::all()->count();
         $articlesCounter = Article::all()->count();
 
-        $user = Auth::user();
+        $userName = '';
+        if (Auth::check()) {
+            $user = Auth::user();
 
-        $userName = $user->email;
+            $userName = $user->email;
+        }
+     
         
         return view('admin.index', compact('articlesCounter', 'userName'));
     }
