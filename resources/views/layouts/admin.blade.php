@@ -139,6 +139,11 @@
               </p>
             </a>
           </li>
+          @php
+    use Illuminate\Support\Facades\Auth;
+      $user = Auth::user();
+    @endphp
+    @if ($user->hasRole('admin'))
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-users"></i>
@@ -162,11 +167,8 @@
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            @php
-    use Illuminate\Support\Facades\Auth;
-      $user = Auth::user();
-    @endphp
-            @if ($user->hasRole('admin'))
+        
+            
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('menu.edit')}}" class="nav-link">
@@ -175,10 +177,11 @@
                 </a>
               </li>
             </ul>
-            @endif
+        
 
             
           </li>
+          @endif
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
