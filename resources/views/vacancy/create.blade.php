@@ -42,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     <label>Активность</label>
-                    <input type="checkbox" name="active" class="form-control">
+                    <input type="checkbox" name="active">
                   </div>
                 <div class="form-group">
                   <input type="text" name="salary" placeholder="Сумма" class="form-control">
