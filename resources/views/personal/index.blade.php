@@ -29,6 +29,7 @@
             </div>
 
             <div class="orders">
+                @if ($orders)
                 @foreach ($orders as $order)
                 <a href="#" class="order">
                     <div class="order__top d-flex justify-content-between">
@@ -72,6 +73,9 @@
                     </div>
                 </a>
                 @endforeach
+                @else
+                <p>У вас пока нет заявок</p>
+                @endif
             </div>
         </div>
     </div>
