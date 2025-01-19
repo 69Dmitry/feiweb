@@ -42,7 +42,7 @@
                       </div>
                     </div>
                     <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
-                      <h3 class="text-primary"><i class="fa fa-pencil-square-o"></i> Информация о статье</h3>
+                      <h3 class="text-primary"><i class="fa fa-pencil-square-o"></i> Информация об услуге</h3>
                      
                       <br>
                       <div class="text-muted">

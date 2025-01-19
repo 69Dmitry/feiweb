@@ -44,8 +44,8 @@
                       </div>
                     </div>
                     <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
-                      <h3 class="text-primary"><i class="fa fa-pencil-square-o"></i> Информация о статье</h3>
-                      {{-- <p class="text-muted" style="">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p> --}}
+                      <h3 class="text-primary"><i class="fa fa-pencil-square-o"></i> Информация о новости</h3>
+                    
                       <br>
                       <div class="text-muted">
                         <p class="text-sm">Дата создания:
