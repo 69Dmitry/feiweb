@@ -3,7 +3,7 @@
 <div class="row">
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="">Главная /</a></li>
-      <li class="breadcrumbs__item">   <a href="{{route('service.list')}}" class="breadcrumbs__link" href="">Статьи / </a></li>
+      <li class="breadcrumbs__item">   <a href="{{route('service.list')}}" class="breadcrumbs__link" href="">Услуги / </a></li>
       <li class="breadcrumbs__item breadcrumbs__item-active">{{ $service->title}} </li>
     </ul>
     <div class="col-lg-9 col-sm-12">
