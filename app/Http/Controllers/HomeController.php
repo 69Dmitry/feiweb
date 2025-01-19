@@ -19,7 +19,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
 
-        $articles = Article::where('active', '=', 1)->get();
+        $articles = Article::where('active', '=', 1)->limit(4)->get();
         $services = Service::where('active', '=', 1)->get();
         $query = '';
         if ($request->query('q')) {
