@@ -32,17 +32,17 @@ Route::group(['prefix' => 'news'], function(){
     Route::get('/{slug}', \App\Http\Controllers\News\ViewController::class)->name('news.view');
 });
 
-//Route::group(['prefix' => 'personal', 'middleware' => ['auth', 'permission:manage personal']], function(){
+Route::group(['prefix' => 'personal', 'middleware' => ['auth', 'permission:manage personal']], function(){
     Route::get('/orders', \App\Http\Controllers\Personal\IndexController::class)->name('personal.index');
     Route::get('/info', \App\Http\Controllers\Personal\ViewController::class)->name('personal.view');
     Route::get('/update', \App\Http\Controllers\Personal\UpdateController::class)->name('personal.update');
-//});
+});
 
 
 
-//Route::group(['middleware' => ['auth', 'permission:manage apanel']], function () {
+Route::group(['middleware' => ['auth', 'permission:manage apanel']], function () {
     Route::get('/admin', \App\Http\Controllers\Admin\AdminController::class)->name('admin.index');
-//});
+});
 
 Route::group(['prefix' => 'admin/articles'], function() {
     Route::get('/', \App\Http\Controllers\Article\IndexController::class)->name('article.index');
