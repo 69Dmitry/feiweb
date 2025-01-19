@@ -15,17 +15,34 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        
+        // $permissionAdmin = Permission::create(['name' => 'manage apanel']);
+
+        // // Создание роли и привязка разрешения
+        // $role = Role::create(['name' => 'admin']);
+        // $role->givePermissionTo($permissionAdmin);
+
+
+        // $permissionContentManager = Permission::create(['name' =>'manage content']);
+
+        // $roleCM = Role::create(['name' => 'content manager']);
+        // $roleCM->givePermissionTo($permissionContentManager);
+
+
+        // $permissionUser = Permission::create(['name' => 'manage personal']);
+        // $roleUser = Role::create(['name' => 'simple user']);
+        // $roleUser->givePermissionTo($permissionUser);
+
+
         // User::factory(10)->create();
         // $permissionUser = Permission::create(['name' => 'manage personal']);
 
         // $user = User::factory()->create([
-        //     'name' => 'Simple User',
-        //     'email' => 'simple1@example.com',
-        //     'phone' => '+79260939393',
+        //     'name' => 'Admin',
+        //     'email' => 'admin@example.com',
+        //     'phone' => '+79260938282',
         //     'status' => 0,
         //     'password' => bcrypt('12345678'),
         // ]);
-
-
     }
 }
