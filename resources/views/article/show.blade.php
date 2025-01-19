@@ -63,9 +63,7 @@
                           </p>
                       </div>
                    
-                      <div class="mt-5">
-                        <a href="#" class="btn btn-primary">Посмотреть на сайте</a>
-                      </div>
+                    
                     </div>
                   </div>
                 </div>
