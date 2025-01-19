@@ -159,6 +159,11 @@
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            @php
+    use Illuminate\Support\Facades\Auth;
+      $user = Auth::user();
+    @endphp
+            @if ($user->hasRole('admin'))
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('menu.edit')}}" class="nav-link">
@@ -167,6 +172,9 @@
                 </a>
               </li>
             </ul>
+            @endif
+
+            
           </li>
         </ul>
       </nav>
