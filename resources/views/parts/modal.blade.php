@@ -8,13 +8,16 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="/admin/update">
-                        <input type="text" placeholder="Ваше имя" class="form__input">
-                        <input type="text" placeholder="Ваш телефон" class="form__input">
+                    <div class="alert alert-success" style="display:none" role="alert">
+                        Ваше сообщение отправлено!
+                    </div>
+                    <form method="post" class="callback" action="#">
+                        <input type="text" name="name" placeholder="Ваше имя" class="form__input">
+                        <input type="text"  name="phone" placeholder="Ваш телефон" class="form__input">
                     </form>
                 </div>
                 <div class="modal-footer text-center">
-                    <button type="button" class="button">Отправить </button>
+                    <button type="button" class="button js-send-button">Отправить </button>
                 </div>
             </div>
         </div>
