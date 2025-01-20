@@ -87,22 +87,22 @@
             <div class="col-lg-3">
                 <div class="footer__title">Клиентам</div>
                 <ul class="footer__menu">
-                    <li><a class="footer__link" href="">Новости</a></li>
-                    <li><a class="footer__link" href="">Статьи</a></li>
-                    <li><a class="footer__link" href="">Личный кабинет</a></li>
-                    <li><a class="footer__link" href="">Услуги</a></li>
+                    <li><a class="footer__link" href="/news">Новости</a></li>
+                    <li><a class="footer__link" href="/articles">Статьи</a></li>
+                    <li><a class="footer__link" href="/personal/orders">Личный кабинет</a></li>
+                    <li><a class="footer__link" href="/services">Услуги</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
             <div class="footer__title">Сотрудничество</div>
                 <ul class="footer__menu">
-                    <li><a class="footer__link" href="">Вакансии</a></li>
+                    <li><a class="footer__link" href="/vacancies">Вакансии</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
             <div class="footer__title">Контакты</div>
             <div class="footer__phone">+7 496 172 84 89</div>
-            <div class="footer__phone">+7 985 999 31 77</div>
+            <div class="footer__phone">+7 185 999 31 47</div>
             <div class="footer__mail">
                 <a href="mailto:info@fei.ru">info@fei.ru</a>
                 <a href="mailto:order@fei.ru">order@fei.ru</a>

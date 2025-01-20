@@ -87,16 +87,16 @@
             <div class="col-lg-3">
                 <div class="footer__title">Клиентам</div>
                 <ul class="footer__menu">
-                    <li><a class="footer__link" href="">Новости</a></li>
-                    <li><a class="footer__link" href="">Статьи</a></li>
-                    <li><a class="footer__link" href="">Личный кабинет</a></li>
-                    <li><a class="footer__link" href="">Услуги</a></li>
+                    <li><a class="footer__link" href="/news">Новости</a></li>
+                    <li><a class="footer__link" href="/articles">Статьи</a></li>
+                    <li><a class="footer__link" href="/personal/orders">Личный кабинет</a></li>
+                    <li><a class="footer__link" href="/services">Услуги</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
             <div class="footer__title">Сотрудничество</div>
                 <ul class="footer__menu">
-                    <li><a class="footer__link" href="">Вакансии</a></li>
+                    <li><a class="footer__link" href="/vacancies">Вакансии</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
