@@ -32,7 +32,7 @@
             <div class="col-lg-3">
             <div class="footer__title">Контакты</div>
             <div class="footer__phone">+7 496 172 84 89</div>
-            <div class="footer__phone">+7 985 999 31 77</div>
+            <div class="footer__phone">+7 185 299 31 77</div>
             <div class="footer__mail">
                 <a href="mailto:info@fei.ru">info@fei.ru</a>
                 <a href="mailto:order@fei.ru">order@fei.ru</a>
