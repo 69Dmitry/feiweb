@@ -39,7 +39,7 @@
                 <div class="row">
                     @foreach ($services as $k => $service)
                     <div class="col-lg-3 d-flex">
-                        <a href="{{route('service.view', ['id' => $service->id ])}" class="adv__item flex-fill">
+                        <a href="{{route('service.view', ['id' => $service->id ]) }}" class="adv__item flex-fill">
                             <div class="adv__wrap">
                                 <div class="adv__icon">
                                     <img src="{{asset('images/circle.svg')}}" alt="adv">
