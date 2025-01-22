@@ -11,7 +11,6 @@ class ManagerController extends Controller
 {
     public function get($id)
     {
-        $result = [];
         if (Auth::isAllowAccess()) {
             $manager = ModelsManager::find($id);
             return response()->json($manager, 200);
