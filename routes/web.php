@@ -107,4 +107,9 @@ Route::group(['prefix' => 'api/v1/'], function(){
     Route::post('/managers/add/', [App\Http\Controllers\ManagerController::class, 'add']);
     Route::post('/managers/delete/', [App\Http\Controllers\ManagerController::class, 'delete']);
     Route::get('/managers/get/', [App\Http\Controllers\ManagerController::class, 'get']);
+
+    Route::get('/orders', [App\Http\Controllers\OrderController::class, 'index']);
+    Route::post('/orders/add/', [App\Http\Controllers\OrderController::class, 'add']);
+    Route::post('/orders/delete/', [App\Http\Controllers\OrderController::class, 'delete']);
+    Route::get('/orders/get/', [App\Http\Controllers\OrderController::class, 'get']);
 });

@@ -12,7 +12,7 @@ class OrderController extends Controller
     public function get($id)
     {
         if (Auth::isAllowAccess()) {
-            $order = [];
+            $order = OrderModel::find($id)->get();
             return response()->json($order, 200);
         }
     }

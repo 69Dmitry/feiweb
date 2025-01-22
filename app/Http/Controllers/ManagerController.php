@@ -12,7 +12,7 @@ class ManagerController extends Controller
     public function get($id)
     {
         if (Auth::isAllowAccess()) {
-            $manager = ModelsManager::find($id);
+            $manager = ModelsManager::find($id)->get();
             return response()->json($manager, 200);
         }
     }
