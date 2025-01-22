@@ -28,11 +28,18 @@
                 <div class="form__title">
                     Обратная связь
                 </div>
-                <form action="" class="form__wrap" method="post">
-                    <input class="form__input" type="text" placeholder="Ваше имя">
-                    <input class="form__input" type="text" placeholder="Ваш email">
-                    <textarea class="form__textarea" placeholder="Ваше сообщение"></textarea>
+                <div role="alert" id="contacts__alert" style="display:none" class="alert alert-success">
+                    Ваше сообщение отправлено.
+                </div>
+                <form action="#" class="form__wrap" id="contacts__form" method="post">
+                    <input class="form__input" name="name"  type="text" placeholder="Ваше имя">
+                    <input class="form__input" name="email" type="text" placeholder="Ваш email">
+                    <textarea class="form__textarea" name="comment" placeholder="Ваше сообщение"></textarea>
                 </form>
+
+                <div style="margin-top: 20px;">
+                    <button type="button" class="button js-contact-button">Отправить </button>
+                </div>      
             </div>
         </div>
         <div class="col-lg-6">
