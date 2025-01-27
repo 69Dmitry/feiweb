@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-lg-12 personal__card">
                 <span class="personal__label"> Договор </span>
-                <a href="#" class="personal__value personal__value_curly"> Договор с Admin №12984-кл от 20.10.2024 </a>
+                <a href="#" class="personal__value personal__value_curly"> Договор с {{$user->name}} №12984-кл от 20.10.2024 </a>
                 </div>
 
             </div>
